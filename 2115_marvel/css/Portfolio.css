@@ -16,7 +16,7 @@
     max-width: 100%;
     height: auto;
   }
-
+  
   ol {
     list-style: none;
   }
@@ -83,7 +83,6 @@
   }
   
   .filters label:hover {
-    transition: .3s ease-in-out;
     background: var(--pink);
     color: var(--white);
   }
@@ -100,13 +99,7 @@
   .posts .post {
     background: #fafafa;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    height: 100%;
-    max-height: 100%;
   }
-  figure img{
-    height: 12em;
-  }
-  
   
   .posts .post-title {
     font-size: 1.3rem;
@@ -133,21 +126,17 @@
     margin-bottom: 0.2rem;
   }
   
-  .posts .post-categories label {
+  .posts .post-categories a {
     padding: 0.2rem 0.5rem;
     border-radius: 1rem;
-    color: #afafaf;
-    border: 1px solid #afafaf;
+    border: 1px solid;
     line-height: normal;
     transition: all 0.1s;
   }
   
-  .posts .post-categories label:hover {
-    border: 1px solid var(--pink);
-    transition: .3s ease-in-out;
+  .posts .post-categories a:hover {
     background: var(--pink);
     color: var(--white);
-    cursor: pointer;
   }
   
   
@@ -206,11 +195,5 @@
   
     .posts {
       grid-template-columns: repeat(2, 1fr);
-    }
-  }
-
-  @media screen and (max-width: 300px){
-    .posts{
-      grid-template-columns: repeat(1, 1fr);
     }
   }
